@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events In JS</title>
+    <style>
+        button{
+            border: 0;
+            padding: 5px 10px;
+            cursor: pointer;
+        }
+
+        button:hover{
+            background: #000;
+            color: #fff;
+        }
+    </style>
+</head>
+<body onclick="console.log('body');">
+    <!-- first method using htmtl events -->
+    <section onclick="console.log('section')">
+        <div onclick="console.log('div')">
+            <button onclick="event.stopPropagation(handleClick(event))" >click me</button> 
+        </div>
+    </section>
+
+<!-- second method using js to add events -->
+    <section>
+        <div>
+            <p onclick="console.log('p tag')">
+                <button id="btn2">add event</button>
+                <button id="btn3">remove event</button>
+            </p>
+        </div>
+    </section>
+
+    <form onsubmit="handleForm(event)">
+        <input type="email" name="email" id="">
+        <input type="text" name="name" id="">
+        <input type="file" capture="user" name="" id="">
+        <button type="submit" id="formbtn">submit</button>
+    </form>
+   
+
+    <script src="index.js"></script>
+</body>
+</html>
