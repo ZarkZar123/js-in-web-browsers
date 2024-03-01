@@ -3,6 +3,7 @@
 // const signinBtn =document.querySelector('#signin-btn')
 // const getCookiesBtn =document.querySelector('#get-cookies')
 
+
 //cookies
 
 // function handleSignIn(event){
@@ -64,8 +65,3 @@
 //     console.log(db);
 
 // }
-
-
-
-
-
